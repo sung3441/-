@@ -53,3 +53,32 @@ class Solution {
         return list;
     }
 }
+
+밑은 그나마 개선해본 것,,,=================================================================
+    
+import java.util.ArrayList;
+import java.util.List;
+
+class Solution {
+    public String[] solution(int n, int[] arr1, int[] arr2) {
+        String[] result = new String[n];
+        
+        for(int i = 0; i < n; i++) {
+            String data1 = Integer.toBinaryString(arr1[i]).replace("0", " ").replace("1", "#");
+            data1 = (data1.length() < n)? " ".repeat(n-data1.length())+data1 : data1;
+            String data2 = Integer.toBinaryString(arr2[i]).replace("0", " ").replace("1", "#");
+            data2 = (data2.length() < n)? " ".repeat(n-data2.length())+data2 : data2;
+            
+            StringBuilder sb = new StringBuilder();
+            for(int j = 0; j < n; j++) {
+                if(Character.toString(data1.charAt(j)).equals("#") || Character.toString(data2.charAt(j)).equals("#")) {
+                    sb.append("#");
+                } else {
+                    sb.append(" ");
+                }
+            }
+            result[i] = sb.toString();
+        }
+        return result;
+    }
+}

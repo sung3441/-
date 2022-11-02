@@ -13,12 +13,15 @@ public class 키패드누르기 {
             numPos = new Position((number - 1) / 3, (number - 1) % 3);
             if (number == 0)
                 numPos = new Position(3, 1);
+
             String finger = numPos.getFinger(hand);
             answer.append(finger);
-            if (finger.equals("L"))
+
+            if (finger.equals("L")) {
                 left = numPos;
-            else
-                right = numPos;
+                continue;
+            }
+            right = numPos;
         }
         return answer.toString();
     }

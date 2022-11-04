@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-class Solution {
+class 완주하지못한선수 {
     // sort
     public String solution1(String[] participant, String[] completion) {
         String answer = "";

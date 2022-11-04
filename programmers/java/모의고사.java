@@ -1,6 +1,6 @@
 import java.util.Arrays;
   
-class Solution {
+class 모의고사 {
     public int[] solution(int[] answers) {
         int[] person1 = {1, 2, 3, 4, 5};
         int[] person2 = {2, 1, 2, 3, 2, 4, 2, 5};

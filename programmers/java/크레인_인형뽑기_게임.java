@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
-class Solution {
+class 크레인_인형뽑기_게임 {
     public int solution(int[][] board, int[] moves) {
         int answer = 0;
         ArrayList list = new ArrayList();
 
         int cnt = 0;
         
-        for(int move : moves) 
+        for(int move : moves) {
             boolean flag = true;
             for(int i = 0; i < board.length; i++) {
                 if(board[i][move-1] != 0 && flag) {

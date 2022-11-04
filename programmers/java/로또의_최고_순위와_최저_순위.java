@@ -1,4 +1,4 @@
-class Solution {
+class 로또의_최고_순위와_최저_순위 {
   public int[] solution(int[] lottos, int[] win_nums) {
     int zeroCnt = 0;
     int numCnt = 0;

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-class Solution {
+class 두_개_뽑아서_더하기 {
     public ArrayList<Integer> solution(int[] numbers) {
         ArrayList list = new ArrayList();
         
